@@ -12,6 +12,15 @@ namespace WebApp.Controllers
     {
         public IActionResult Index()
         {
+            var firstUser = new User
+            {
+                No = 1,
+                Name = "Inhyup"
+            };
+
+            //ViewBag.User = firstUser;
+
+            ViewData["User"] = firstUser;
             return View();
         }
 
