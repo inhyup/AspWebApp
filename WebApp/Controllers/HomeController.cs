@@ -12,31 +12,23 @@ namespace WebApp.Controllers
     {
         public IActionResult Index()
         {
-            var firstUser = new User
-            {
-                No = 1,
-                Name = "Inhyup"
-            };
+            //var firstUser = new User
+            //{
+            //    No = 1,
+            //    Name = "Inhyup"
+            //};
 
-            //ViewBag.User = firstUser;
+            ////ViewBag.User = firstUser;
 
-            ViewData["User"] = firstUser;
+            //ViewData["User"] = firstUser;
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult LoginSuccess()
         {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
         }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
 
         public IActionResult Error()
         {

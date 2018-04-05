@@ -10,6 +10,13 @@
     padding-right: 15px;
 }
 
+input,
+select,
+textarea {
+    max-width: 300px;
+}
+
+
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
