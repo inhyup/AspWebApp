@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApp.DataContext;
 using WebApp.Models;
@@ -29,6 +30,8 @@ namespace WebApp.Controllers
                                                         && u.Password.Equals(model.Password));
                     if (user != null) // Login Success
                     {
+                        //HttpContext.Session.SetInt32(key, value);
+                        HttpContext.Session.SetInt32("USER_LOGIN_KEY", user.No);
                         return RedirectToAction("LoginSuccess", "Home");
                     }
                 } 
@@ -36,6 +39,13 @@ namespace WebApp.Controllers
                 ModelState.AddModelError(string.Empty, "Incorrect ID or Password");
             }
             return View(model);
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("USER_LOGIN_KEY");
+
+            return RedirectToAction("Index", "Home");
         }
 
 

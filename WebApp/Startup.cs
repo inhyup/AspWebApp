@@ -22,6 +22,9 @@ namespace WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            // register in services
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +41,8 @@ namespace WebApp
             }
 
             app.UseStaticFiles();
-
+            //use session in app
+            app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
