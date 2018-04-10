@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "f8c1c717151a34fa2ed22172d2de88b4dc327398"
+    "signature": "dc241d96ee1036bc800493264b34346a5134d5d2"
   },
   "compilationOptions": {
     "defines": [
@@ -23,19 +23,27 @@
     ".NETCoreApp,Version=v2.0": {
       "WebApp/1.0.0": {
         "dependencies": {
+          "Bower": "1.3.11",
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.AspNetCore.Session": "2.0.2",
           "Microsoft.EntityFrameworkCore": "2.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "2.0.1",
           "Microsoft.NETCore.App": "2.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.2"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.2",
+          "Trumbowyg": "1.0.1"
         },
         "runtime": {
           "WebApp.dll": {}
         },
         "compile": {
           "WebApp.dll": {}
+        }
+      },
+      "Bower/1.3.11": {
+        "dependencies": {
+          "NoGit": "0.0.8",
+          "Node.js": "0.10.28"
         }
       },
       "Libuv/1.10.0": {
@@ -2495,6 +2503,12 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "Node.js/0.10.28": {},
+      "NoGit/0.0.8": {
+        "dependencies": {
+          "Node.js": "0.10.28"
+        }
+      },
       "NuGet.Frameworks/4.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.0"
@@ -4043,6 +4057,7 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
+      "Trumbowyg/1.0.1": {},
       "WindowsAzure.Storage/8.1.4": {
         "dependencies": {
           "Microsoft.Data.OData": "5.8.2",
@@ -4240,6 +4255,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Bower/1.3.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JNo9rMr25g1ZA1hv8aTzkDTiglq3FGTPoNOqNTGrwckYqJ9/DulmlndUduhPZWJXnIlYxo0krbwgwBtrCZvNqQ==",
+      "path": "bower/1.3.11",
+      "hashPath": "bower.1.3.11.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
@@ -5459,6 +5481,20 @@
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
     },
+    "Node.js/0.10.28": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+dTpiaX8d5gyADdlR0Sz227IvMZ/QJWtyobqHDPqcJRykGdOfskW8yxde9WQRxY/Uyp+u5JN3KbBb2rkYdkT2Q==",
+      "path": "node.js/0.10.28",
+      "hashPath": "node.js.0.10.28.nupkg.sha512"
+    },
+    "NoGit/0.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5/qdluqNIPDSeF7gQ4Ab9xpFiyQrvfBtm/eGT5mErTCaEIdMNFidVlxMWc4ShPO7JK2KngyF5bybD3gxFCi/5A==",
+      "path": "nogit/0.0.8",
+      "hashPath": "nogit.0.0.8.nupkg.sha512"
+    },
     "NuGet.Frameworks/4.0.0": {
       "type": "package",
       "serviceable": true,
@@ -6361,6 +6397,13 @@
       "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Trumbowyg/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TpqGyM7q+uPuac4Oa7dK62jkUksFlMOofyjv5JiVdCVk1iVF2B5UYzLfYcygpgh0Oy/9gIuhNwi+UkNubcVyAA==",
+      "path": "trumbowyg/1.0.1",
+      "hashPath": "trumbowyg.1.0.1.nupkg.sha512"
     },
     "WindowsAzure.Storage/8.1.4": {
       "type": "package",
